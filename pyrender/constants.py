@@ -55,6 +55,10 @@ class RenderFlags(object):
     """Render the color buffer flat, with no lighting computations."""
     SEG = 8192
 
+    """Custom: disable anti-aliasing. """
+    # https://github.com/mmatl/pyrender/pull/175/files
+    DISABLE_ANTI_ALIASING = 16384
+
 
 class TextAlign:
     """Text alignment options for captions.
